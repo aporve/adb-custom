@@ -36,7 +36,7 @@ function injectDynamicCssToParent() {
   parentStyles.type = "text/css";
 
   var parentCssStyles =
-    "#ymFrameHolder { width: 100%; } @media only screen and (min-width: 768px) { #ymFrameHolder { width: 440px; } }";
+    "#ymFrameHolder { width: 100%; } @media only screen and (min-width: 768px) { #ymFrameHolder { width: 440px; } } @media only screen and (max-width: 600px) { #fadeshow { display: none;}}";
     
   if (parentStyles.styleSheet) {
     parentStyles.styleSheet.cssText = parentCssStyles;
